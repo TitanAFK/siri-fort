@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Description</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #ff8c00;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .photo-grid .large-photo {
+            grid-row: span 2;
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .photo-grid .small-photo {
+            width: 84%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .details {
+            text-align: left;
+        }
+
+        .section-container {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent container */
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .section-container.flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2 {
+            color: #ff8c00;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: #ff8c00;
+            font-size: 18px; /* Smaller icon size */
+            vertical-align: middle;
+        }
+
+        .navigate-link {
+            text-decoration: none;
+            color: #ff8c00;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid #ff8c00;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navigate-link:hover {
+            background-color: #ff8c00;
+            color: #121212;
+        }
+
+        /* Ensure content is left-aligned within section containers */
+        .section-container h2, .section-container p {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Siri Fort sports complex</h1>
+        
+        <div class="photo-grid">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipMmDDqEhzGNEdavODqMgq_ku8_w6wufEMHW3pMB=w408-h306-k-no" alt="Large Photo" class="large-photo">
+            <img src="https://content.jdmagicbox.com/comp/gurgaon/w9/011pxx11.xx11.210722142700.e4w9/catalogue/rackonnect-kadarpur-gurgaon-badminton-classes-bk533p917c.jpg" alt="Small Photo 1" class="small-photo">
+            <img src="https://imgmedia.lbb.in/media/2019/06/5d0b4761a59c3311a73e74f2_1561020257848.jpg" alt="Small Photo 2" class="small-photo">
+        </div>
+
+        <div class="details">
+            <div class="section-container flex">
+                <div>
+                    <h2><i class="fas fa-map-marker-alt icon"></i>Address</h2>
+                    <p>Siri Fort Institutional Area, Siri Fort, New Delhi, Delhi 110049</p>
+                </div>
+                <a href="https://maps.app.goo.gl/Nz8j1heuMj5RDUeB6" target="_blank" class="navigate-link">Navigate</a> <!-- Insert your map link in the href -->
+            </div>
+
+            <div class="section-container">
+                <h2><i class="fas fa-clock icon"></i>Timings</h2>
+                
+                <p>Tuesday - Sunday: 6:00 AM - 9:00 PM</p>
+            </div>
+
+            <div class="section-container">
+                <h2><i class="fas fa-phone icon"></i>Contact Information</h2>
+                <p>Phone: 9837483238</p>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
